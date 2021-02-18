@@ -15,4 +15,7 @@ Cloned repository.
 
 Side by side diff comparison. 
 
-Push. 
+Push with VS Code. 
+No pull request required? 
+
+Commit message.
