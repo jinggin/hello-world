@@ -1,6 +1,10 @@
 # hello-world
 Just another repository following the GitHub guide.
 
+v1.1.0 2021/04/13
+WordPress test files backed up.
+
+v1.0.0
 Example text: 
 Hello Humans!
 
