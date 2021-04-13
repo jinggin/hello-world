@@ -58,7 +58,7 @@
 				printf(
 					/* translators: %s: WordPress. */
 					esc_html__( 'Powered by %s.', 'twentytwentyone' ),
-					'<a href="https://better-variety.local/">Kojitsuso</a>'
+					'<a href="https://kojitsuso.local/">Kojitsuso</a>'
 				);
 				?>
 			</div><!-- .powered-by -->
