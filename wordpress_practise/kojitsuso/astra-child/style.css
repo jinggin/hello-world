@@ -1,0 +1,101 @@
+/*
+    Theme Name: Kojitsuso Astra Child
+    Description: An Astra child theme for Kojitsuso
+    Author: Gin Tact
+    Author URI: https://wordpress.org/
+    Template: astra
+    Version: 1.0.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Text Domain: astra-child
+*/
+
+/* Navigation menu
+ * 
+ * 1 General CSS
+ * 1-a Text, headings, contents 
+ * 1-b
+ * 2 Post/News layout (single.php, blog/individual post/archive layout) 
+ * 2-a Post featured image 
+ * 2-b Post title 
+ * 2-c Post meta (Date, category, tags etc.)
+ * 2-d Blog designer, Post and Widget designs
+ * 3 Top Page Specific CSS
+ * 3-a Top big feature box 
+*/
+
+/* 
+ * 1 General CSS 
+**/
+/* 1-a Text, headings, contents 
+*/
+
+/* 
+ * 2 Post/News layout (single.php, blog/individual post/archive layout) 
+**/
+/* Page title, meta center align */
+.entry-header {
+    text-align: center;
+}
+
+/* Right sidebar category selector width */
+select#cat.postform {
+    width: 100%;
+}
+
+/* 2-a Featured image (News page, single page, archive page)
+ * Featured image can be enable/disable from Customisation menu 
+ *
+
+.blog-layout-1 {
+    
+} */
+
+/* News page featured image center align */
+.ast-blog-featured-section {
+    display: flex;
+    justify-content: center;
+}
+
+/* Featured image max height */
+.post-thumb img {
+    max-height: 400px;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+} 
+
+/* 2-b Post title 
+*/
+h1.entry-title {
+    display: inline-block;
+}
+
+/* 2-c Post meta (Date, category, tags etc.) 
+*/
+.entry-meta {
+    text-align: center;
+    border-bottom: 1px solid green;
+    padding: 1.5em;
+}
+
+/* 2-d Blog designer, Post and Widget designs
+*/
+.wpspw-post-image-bg img {
+    max-height: 400px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+/* 
+ * 3 Top Page Specific CSS
+*/
+/* 3-a Top big feature box 
+*/
+@media screen and (max-width: 420px) {
+    .top-big-feature-box .wppb-row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
