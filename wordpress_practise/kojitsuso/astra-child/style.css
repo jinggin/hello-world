@@ -2,7 +2,7 @@
     Theme Name: Kojitsuso Astra Child
     Description: An Astra child theme for Kojitsuso
     Author: Gin Tact
-    Author URI: https://wordpress.org/
+    Author URI: https://gintact.dev/
     Template: astra
     Version: 1.0.0
     License: GNU General Public License v2 or later
@@ -20,8 +20,11 @@
  * 2-b Post title 
  * 2-c Post meta (Date, category, tags etc.)
  * 2-d Blog designer, Post and Widget designs
- * 3 Top Page Specific CSS
- * 3-a Top big feature box 
+ * 3 Global navigation menu 
+ * 3-a Navigation logo
+ * 3-b Navigation item 
+ * 4 Top Page Specific CSS
+ * 4-a Top big feature box 
 */
 
 /* 
@@ -29,6 +32,14 @@
 **/
 /* 1-a Text, headings, contents 
 */
+/* Source Han Serif Japanese for 日本語文字 
+ * Playfair Display for latin text 
+*/
+body {
+    font-family: 'Playfair Display', 'source-han-serif-japanese', serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* 
  * 2 Post/News layout (single.php, blog/individual post/archive layout) 
@@ -45,11 +56,7 @@ select#cat.postform {
 
 /* 2-a Featured image (News page, single page, archive page)
  * Featured image can be enable/disable from Customisation menu 
- *
-
-.blog-layout-1 {
-    
-} */
+*/
 
 /* News page featured image center align */
 .ast-blog-featured-section {
@@ -89,9 +96,86 @@ h1.entry-title {
 }
 
 /* 
- * 3 Top Page Specific CSS
+ * 3 Global navigation menu 
 */
-/* 3-a Top big feature box 
+.header {
+    background-color: #B3D898;
+}
+
+.global-menu-container {
+    position: relative;
+    z-index: 1;
+    max-width: 1170px;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-column-gap: 10px;
+}
+
+/* 3-a Navigation logo 
+*/
+.nav-logo:hover {
+    background-color: #7c9c65a1;
+}
+
+.nav-logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* 3-b Navigation item 
+*/
+.header-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    -webkit-box-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.header-nav-item {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.header-nav-item:hover {
+    background-color: #7c9c65a1;
+}
+
+.header-nav-item a {
+    color: #3A3A3A;
+    display: inline-block;
+    padding: 25px 0 20px 0;
+}
+
+.header-nav-item a:hover {
+    color: #fff;
+}
+
+.header-nav-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 420px) {
+    .header-nav {
+        display: none;
+    }
+}
+
+/* 
+ * 4 Top Page Specific CSS
+*/
+/* 4-a Top big feature box 
 */
 @media screen and (max-width: 420px) {
     .top-big-feature-box .wppb-row {
@@ -99,3 +183,12 @@ h1.entry-title {
         flex-direction: column-reverse;
     }
 }
+
+.top-news-title h2 {
+    margin: 0;
+}
+
+/*
+#top-news {
+
+}*/
