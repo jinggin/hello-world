@@ -1,3 +1,6 @@
+v1.2.0 2021/05/26
+GT Blocksy theme trials.
+
 # hello-world
 Just another repository following the GitHub guide.
 
